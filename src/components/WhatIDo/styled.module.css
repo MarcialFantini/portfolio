@@ -1,0 +1,121 @@
+.container {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+  margin: 100px auto 100px auto;
+
+  color: white;
+}
+
+.cards {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  backdrop-filter: blur(20px);
+}
+
+.column {
+  min-height: 200px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+
+  font-size: 1.2rem;
+}
+
+.primero {
+  min-height: 130px;
+
+  background: linear-gradient(
+    141deg,
+    rgba(62, 19, 143, 1) 0%,
+    rgba(31, 187, 216, 1) 100%
+  );
+}
+
+.segundo {
+  min-height: 100px;
+  background: rgb(33, 170, 208);
+  background: linear-gradient(
+    36deg,
+    rgba(33, 170, 208, 1) 0%,
+    rgba(158, 89, 252, 1) 100%
+  );
+}
+
+.tercero {
+  opacity: 0;
+  min-height: 60px;
+}
+
+.cuarto {
+  height: 40px;
+  opacity: 0;
+}
+
+.quinto {
+  background: rgb(45, 21, 178);
+  background: linear-gradient(
+    36deg,
+    rgba(45, 21, 178, 1) 0%,
+    rgba(106, 86, 230, 1) 85%
+  );
+  min-height: 40px;
+}
+
+.sexto {
+  background: rgb(62, 19, 143);
+  background: linear-gradient(
+    36deg,
+    rgba(62, 19, 143, 1) 0%,
+    rgba(144, 53, 114, 1) 85%
+  );
+  min-height: 100px;
+}
+
+.textDo {
+  min-height: 200px;
+
+  width: 95%;
+  margin: auto;
+}
+
+.barContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: gray;
+  font-size: 1.6rem;
+}
+
+.bar {
+  width: 20px;
+  height: 1px;
+  background: red;
+}
+
+.title {
+  font-size: 3.2rem;
+  margin: 0;
+}
+
+.text {
+  font-size: 1.6rem;
+}

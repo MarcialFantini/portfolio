@@ -1,0 +1,46 @@
+.containerSkill {
+  width: 90%;
+  min-height: 300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.containerImg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  padding: 0 20% 0 20%;
+}
+
+.containerText {
+  color: white;
+}
+
+.containerLine {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.line {
+  width: 30px;
+  height: 1px;
+  background: red;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 2.4rem;
+  margin: 0;
+  color: white;
+}
+
+.titleH2 {
+  font-size: 2.4rem;
+  color: rgb(213, 1, 255);
+}

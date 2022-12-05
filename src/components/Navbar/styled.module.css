@@ -1,0 +1,58 @@
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: white;
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.listLink {
+  list-style: none;
+  padding: 0%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.link {
+  cursor: pointer;
+
+  color: gray;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.link:hover {
+  color: #fd1024;
+}
+
+.linkBarBase {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  width: 0%;
+  background: #fd1024;
+  transition: all 0.4s;
+}
+
+.linkBarActive {
+  width: 100%;
+}

@@ -1,0 +1,76 @@
+.projectsContainer {
+  width: 90%;
+  min-height: 300px;
+  margin: 40px auto;
+}
+
+.mosaicos {
+  margin: auto;
+  width: 80%;
+  max-width: 700px;
+  height: 400px;
+  display: grid;
+  grid-template-areas:
+    "uno dos dos"
+    "tres tres cuatro"
+    "cinco cinco cinco";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid black;
+  background: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+.uno {
+  grid-area: uno;
+}
+
+.dos {
+  grid-area: dos;
+}
+.tres {
+  grid-area: tres;
+}
+.cuatro {
+  grid-area: cuatro;
+}
+.cinco {
+  grid-area: cinco;
+}
+
+.img {
+  width: 120%;
+}
+
+.containerLine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.line {
+  width: 40px;
+  height: 1px;
+  background: red;
+  margin-right: 10px;
+}
+
+.titleH2 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: white;
+}
+
+.textProject {
+  color: gray;
+  width: 70%;
+  font-size: 1.6rem;
+}

@@ -1,0 +1,121 @@
+.ContainerAbout {
+  min-height: 400px;
+  width: 90%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.textoAboutMe {
+  min-height: 300px;
+}
+
+.containerBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bar {
+  width: 30px;
+  height: 1px;
+  background: red;
+  margin-right: 10px;
+}
+
+.titleH4 {
+  font-size: 2rem;
+  color: white;
+}
+
+.textP {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  padding: 0;
+}
+
+.ul {
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.circle2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid red;
+  margin-right: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle1 {
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cvBtn {
+  color: red;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  background: transparent;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.cvBtn:hover {
+  color: white;
+}
+
+.containerImg {
+  min-height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.picture {
+  overflow: hidden;
+}
+
+.picture1 {
+  position: absolute;
+  width: 40%;
+  height: auto;
+
+  bottom: 0;
+  left: 10%;
+  z-index: 10;
+}
+
+.picture2 {
+  position: absolute;
+  width: 60%;
+  height: auto;
+
+  top: 0;
+  right: 10%;
+  z-index: 0;
+
+  border-radius: 20% 0;
+}

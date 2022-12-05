@@ -1,0 +1,32 @@
+.containerHeader {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  align-items: center;
+}
+
+.textContainer {
+  color: white;
+}
+
+.text {
+  font-size: 1.6rem;
+}
+
+.title {
+  font-size: 4.6rem;
+  margin: 0;
+}
+
+.subTitle {
+  color: gray;
+}
+
+.picture {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
