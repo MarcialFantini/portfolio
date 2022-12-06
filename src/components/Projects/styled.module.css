@@ -6,25 +6,22 @@
 
 .mosaicos {
   margin: auto;
-  width: 80%;
+  width: 95%;
   max-width: 700px;
   height: 400px;
   display: grid;
   grid-template-areas:
-    "uno dos dos"
-    "tres tres cuatro"
-    "cinco cinco cinco";
+    "uno dos dos dos"
+    "tres tres cuatro cuatro"
+    "cinco cinco cinco cinco";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
 }
 
 .card {
-  border: 1px solid black;
-  background: rebeccapurple;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   min-height: 100px;
   overflow: hidden;
 }
@@ -47,7 +44,8 @@
 }
 
 .img {
-  width: 120%;
+  height: auto;
+  width: 100%;
 }
 
 .containerLine {

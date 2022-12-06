@@ -2,6 +2,9 @@ import { useState } from "react";
 
 import "./App.css";
 import About from "./components/About";
+import BtnTop from "./components/BtnTop";
+import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 import Navbar from "./components/Navbar";
@@ -20,6 +23,9 @@ function App() {
       <Projects></Projects>
       <About></About>
       <Skills></Skills>
+      <ContactMe></ContactMe>
+      <Footer></Footer>
+      <BtnTop></BtnTop>
     </div>
   );
 }

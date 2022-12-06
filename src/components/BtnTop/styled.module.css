@@ -1,0 +1,17 @@
+.btnTop {
+  width: 10%;
+  height: 10vw;
+
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+
+  color: white;
+  background: rgb(253, 32, 168);
+  border: none;
+  border-radius: 10%;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+}

@@ -5,19 +5,36 @@ import mosaico from "../../assets/mosaico.jpg";
 
 import styled from "./styled.module.css";
 
+import cv from "../../../public/cv.pdf";
+
 function About() {
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch(cv).then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "cv.pdf";
+        alink.click();
+      });
+    });
+  };
   return (
     <div className={styled.ContainerAbout}>
       <div className={styled.textoAboutMe}>
         <div className={styled.containerBar}>
           <div className={styled.bar}></div>
-          <h4 className={styled.titleH4}>ABOUT ME</h4>
+          <h4 id="about" className={styled.titleH4}>
+            ABOUT ME
+          </h4>
         </div>
         <p className={styled.textP}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          enim accusantium porro deserunt ipsa ex, pariatur fugiat suscipit
-          iusto necessitatibus labore quaerat nihil adipisci aut debitis eius
-          recusandae numquam obcaecati.
+          I'm a front end developer with experiences in ReactJs. I created much
+          pages like personal projects. I wanna work in one startup or company.
+          I can work with modern javascript
         </p>
 
         <ul className={styled.list}>
@@ -47,7 +64,7 @@ function About() {
           </li>
         </ul>
         <div className={styled.btnContainer}>
-          <BtnNormal>Hire Me</BtnNormal>
+          <BtnNormal handlerClick={onButtonClick}>Hire Me</BtnNormal>
           <button className={styled.cvBtn}>Download CV</button>
         </div>
       </div>

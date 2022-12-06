@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: space-around;
   padding: 10px 0;
+
+  overflow: hidden;
 }
 
 .title {
@@ -55,4 +57,41 @@
 
 .linkBarActive {
   width: 100%;
+}
+
+.btnHamburger {
+  display: none;
+}
+
+.activeNav {
+  left: -100%;
+}
+
+@media (max-width: 600px) {
+  .listLink {
+    background: #3310fd;
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 50;
+
+    transition: all 0.5s ease-in-out;
+  }
+  .link {
+    font-size: 2rem;
+  }
+
+  .btnHamburger {
+    transform: rotate(90deg);
+    display: block;
+    font-size: 5rem;
+    color: white;
+  }
+  .title {
+    font-size: 3rem;
+  }
 }
