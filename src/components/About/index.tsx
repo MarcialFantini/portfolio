@@ -7,6 +7,9 @@ import styled from "./styled.module.css";
 
 import cv from "../../../public/cv.pdf";
 
+import picture1 from "../../assets/About/1.jpg";
+
+import picture2 from "../../assets/About/2.jpg";
 function About() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
@@ -17,7 +20,7 @@ function About() {
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "cv.pdf";
+        alink.download = "MarcialFantini_FrontEnd.pdf";
         alink.click();
       });
     });
@@ -32,9 +35,9 @@ function About() {
           </h4>
         </div>
         <p className={styled.textP}>
-          I'm a front end developer with experiences in ReactJs. I created much
-          pages like personal projects. I wanna work in one startup or company.
-          I can work with modern javascript
+          I'm a front-end developer with experiences in ReactJs. I created lot
+          pages as personal projects. I wanna work in one startup or company. I
+          love work with modern javascript
         </p>
 
         <ul className={styled.list}>
@@ -65,15 +68,14 @@ function About() {
         </ul>
         <div className={styled.btnContainer}>
           <BtnNormal handlerClick={onButtonClick}>Hire Me</BtnNormal>
-          <button className={styled.cvBtn}>Download CV</button>
         </div>
       </div>
       <div className={styled.containerImg}>
         <picture className={styled.picture1 + " " + styled.picture}>
-          <img src={mosaico} alt="" />
+          <img className={styled.img2} src={picture2} alt="" />
         </picture>
         <picture className={styled.picture2 + " " + styled.picture}>
-          <img src={mosaico} alt="" />
+          <img src={picture1} alt="" />
         </picture>
       </div>
     </div>

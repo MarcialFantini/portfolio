@@ -10,28 +10,31 @@ function ContactMe() {
         <h4 className={styled.titleH4}>Contact Me</h4>
       </div>
       <h2 className={styled.titleH2}>Drop Me A Message</h2>
-      <p className={styled.text}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-        necessitatibus provident excepturi sed architecto repellendus aspernatur
-        cum quis, earum pariatur accusantium nulla iure voluptatibus repudiandae
-        magnam veniam ex enim. Totam.
-      </p>
+      <p className={styled.text}>Hey! contact me on my networks!</p>
       <div className={styled.row}>
         <img className={styled.img} src="" alt="" />
         <div className="">
-          <p>SDadwadwadwadawdawdwadwadwa</p>
+          <p>Phone: +543533685147</p>
         </div>
       </div>
       <div className={styled.row}>
         <img className={styled.img} src="" alt="" />
         <div className="">
-          <p>SDadwadwadwadawdawdwadwadwa</p>
+          <p>Email: marcialfantini@gmail.com</p>
         </div>
       </div>
       <div className={styled.row}>
         <img className={styled.img} src="" alt="" />
         <div className="">
-          <p>SDadwadwadwadawdawdwadwadwa</p>
+          <p>
+            LinkedIn :{"  "}
+            <a
+              className={styled.linkA}
+              href="https://www.linkedin.com/in/marcial-domingo-fantini-87b9b920a/"
+            >
+              Click Here
+            </a>
+          </p>
         </div>
       </div>
     </div>

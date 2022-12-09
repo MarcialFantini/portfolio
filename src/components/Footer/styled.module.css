@@ -27,3 +27,9 @@
 .title:hover {
   color: crimson;
 }
+
+@media (max-width: 500px) {
+  .listLink {
+    display: none;
+  }
+}

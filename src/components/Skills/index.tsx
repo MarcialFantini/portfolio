@@ -24,12 +24,7 @@ function Skills() {
           <h4 className={styled.title}>My Skills</h4>
         </div>
         <h2 className={styled.titleH2}>Language & Tools</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-          adipisci enim sit animi, sequi nisi neque expedita aspernatur illum
-          odit molestiae minima ipsa earum, autem placeat assumenda. Sint, sequi
-          dolorem?
-        </p>
+        <p>I know React JS, JavaScript, Css3, Html5, Git and Redux JS</p>
       </div>
     </div>
   );

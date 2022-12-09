@@ -16,8 +16,7 @@ export default function WhatIDo() {
           <h1 className={styled.title}>Better Programs</h1>
           <h1 className={styled.title}>Better Experiences</h1>
           <p className={styled.text}>
-            La mejor experiencia en de trato con el cliente para dar el mejor
-            trabajo posible!
+            The best experiences with the client for give the best working !
           </p>
         </div>
       </div>
