@@ -10,8 +10,9 @@
 
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   justify-content: space-around;
+  gap: 10px;
 }
 
 .containerBar {
@@ -29,23 +30,29 @@
 }
 
 .titleH4 {
-  font-size: 2.4rem;
+  font-size: 4rem;
   color: white;
 }
 
 .titleH2 {
   font-size: 2.4rem;
-  color: red;
+  color: #7bff00;
 }
 
 .text {
-  font-size: 1.6rem;
-  color: gray;
+  font-size: 2rem;
+  color: white;
 }
 
 .row {
   color: white;
   font-size: 1.4rem;
+  background: rgba(255, 255, 255, 0.1);
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .linkA {

@@ -9,7 +9,7 @@ function BtnTop() {
 
   return (
     <button onClick={toTop} className={styled.btnTop}>
-      Tap
+      Top
     </button>
   );
 }

@@ -7,11 +7,11 @@
   right: 10%;
 
   color: white;
-  background: rgb(253, 32, 168);
+  background: rgb(0, 0, 0);
   border: none;
   border-radius: 10%;
 
-  font-size: 2rem;
+  font-size: 3rem;
 
   cursor: pointer;
 }

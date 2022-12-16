@@ -12,19 +12,16 @@ function ContactMe() {
       <h2 className={styled.titleH2}>Drop Me A Message</h2>
       <p className={styled.text}>Hey! contact me on my networks!</p>
       <div className={styled.row}>
-        <img className={styled.img} src="" alt="" />
         <div className="">
           <p>Phone: +543533685147</p>
         </div>
       </div>
       <div className={styled.row}>
-        <img className={styled.img} src="" alt="" />
         <div className="">
           <p>Email: marcialfantini@gmail.com</p>
         </div>
       </div>
       <div className={styled.row}>
-        <img className={styled.img} src="" alt="" />
         <div className="">
           <p>
             LinkedIn :{"  "}
