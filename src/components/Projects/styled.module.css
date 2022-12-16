@@ -1,28 +1,27 @@
 .projectsContainer {
-  width: 90%;
+  width: 100%;
+  padding: 5%;
   min-height: 300px;
   margin: 40px auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+
+  min-height: 500px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
 }
 
 .mosaicos {
-  margin: auto;
-  width: 95%;
-  max-width: 700px;
-  height: 400px;
-  display: grid;
-  grid-template-areas:
-    "uno dos dos dos"
-    "tres tres cuatro cuatro"
-    "cinco cinco cinco cinco";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .card {
   display: flex;
 
-  min-height: 100px;
+  height: 100px;
   overflow: hidden;
 }
 
@@ -44,8 +43,8 @@
 }
 
 .img {
-  height: auto;
-  width: 100%;
+  height: 100%;
+  width: auto;
 }
 
 .containerLine {
@@ -71,4 +70,19 @@
   color: gray;
   width: 70%;
   font-size: 1.6rem;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.4s;
+  padding: 5px 0;
+}
+
+.flexRow:hover {
+  background: rgba(65, 34, 240, 0.1);
 }

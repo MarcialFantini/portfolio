@@ -7,7 +7,7 @@ export default function Cards() {
     <div className={styled.cards}>
       <div className={styled.column}>
         <div className={styled.card + " " + styled.primero}>
-          <h3 className={styled.title}>Layout the page</h3>
+          <h3 className={styled.title}>User interface design</h3>
           <p>Translate the design of the site to code Html and Css </p>
         </div>
         <div className={styled.card + " " + styled.segundo}>

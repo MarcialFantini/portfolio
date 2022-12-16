@@ -1,0 +1,29 @@
+.video {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoSource {
+  top: 0;
+  right: 0;
+  position: fixed;
+
+  height: 120vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: black;
+
+  z-index: -100;
+}
+
+@media (max-width: 400px) {
+  .videoSource {
+    width: auto;
+    height: 100%;
+  }
+}

@@ -1,7 +1,12 @@
 .containerContact {
-  width: 90%;
+  width: 100%;
   min-height: 200px;
   margin: 100px auto;
+
+  padding: 5%;
+
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
 
   display: flex;
   flex-direction: column;

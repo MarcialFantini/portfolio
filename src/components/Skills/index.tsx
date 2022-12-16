@@ -12,11 +12,28 @@ function Skills() {
   return (
     <div className={styled.containerSkill}>
       <div className={styled.containerImg}>
-        <img className={styled.img} src={image1} alt="" />
-        <img className={styled.img} src={image2} alt="" />
-        <img className={styled.img} src={image3} alt="" />
-        <img className={styled.img} src={image4} alt="" />
-        <img className={styled.img} src={image5} alt="" />
+        <div className={styled.rowSkill}>
+          <img className={styled.img} src={image4} alt="" />
+          <h4 className={styled.titleH4}>Next13</h4>
+        </div>
+
+        <div className={styled.rowSkill}>
+          <img className={styled.img} src={image2} alt="" />
+          <h4 className={styled.titleH4}>ReactJS</h4>
+        </div>
+        <div className={styled.rowSkill}>
+          <img className={styled.img} src={image3} alt="" />
+          <h4 className={styled.titleH4}>Html5 JavaScript Css3</h4>
+        </div>
+
+        <div className={styled.rowSkill}>
+          <img className={styled.img} src={image5} alt="" />
+          <h4 className={styled.titleH4}>NodeJs</h4>
+        </div>
+        <div className={styled.rowSkill}>
+          <img className={styled.img} src={image1} alt="" />
+          <h4 className={styled.titleH4}>Git</h4>
+        </div>
       </div>
       <div className={styled.containerText}>
         <div className={styled.containerLine}>
@@ -24,7 +41,18 @@ function Skills() {
           <h4 className={styled.title}>My Skills</h4>
         </div>
         <h2 className={styled.titleH2}>Language & Tools</h2>
-        <p>I know React JS, JavaScript, Css3, Html5, Git and Redux JS</p>
+        <p className={styled.textP}>
+          I am proficient in a range of web development technologies, including
+          React JS, JavaScript, CSS3, HTML5, Git, and Redux JS. I have
+          experience using React to build user interfaces, and I have used Redux
+          to manage application state in projects that use React. I am also
+          skilled in CSS3 and HTML5, which I have used to design and structure
+          the content of web pages. I am familiar with Git, a version control
+          system that allows me to track changes to my code and collaborate with
+          others on projects. I am constantly looking to learn and improve my
+          skills, and I am excited to continue developing my expertise in these
+          technologies.
+        </p>
       </div>
     </div>
   );

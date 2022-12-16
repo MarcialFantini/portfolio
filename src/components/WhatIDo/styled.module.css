@@ -1,21 +1,25 @@
 .container {
-  width: 95%;
+  width: 100%;
+  min-height: 500px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-  margin: 100px auto 100px auto;
+  margin: 150px auto 150px auto;
 
   color: white;
+
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
 }
 
 .cards {
   margin: auto;
   width: 90%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
 
-  backdrop-filter: blur(20px);
+  align-items: center;
 }
 
 .column {
@@ -35,8 +39,6 @@
 
   flex-direction: column;
   justify-content: space-around;
-
-  font-size: 1.2rem;
 }
 
 .primero {
@@ -112,10 +114,17 @@
 }
 
 .title {
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin: 0;
 }
 
 .text {
   font-size: 1.6rem;
+  margin: 0;
+}
+
+@media (max-width: 400px) {
+  .displayNone400px {
+    display: none;
+  }
 }

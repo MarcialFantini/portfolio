@@ -8,6 +8,7 @@
   padding: 10px 0;
 
   overflow: hidden;
+  background: black;
 }
 
 .title {
@@ -29,7 +30,7 @@
 .link {
   cursor: pointer;
 
-  color: gray;
+  color: white;
   transition: all 0.3s;
   font-size: 1.2rem;
   font-weight: 600;

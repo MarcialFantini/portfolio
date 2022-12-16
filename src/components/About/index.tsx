@@ -26,18 +26,22 @@ function About() {
     });
   };
   return (
-    <div className={styled.ContainerAbout}>
+    <div id="about" className={styled.ContainerAbout}>
       <div className={styled.textoAboutMe}>
         <div className={styled.containerBar}>
           <div className={styled.bar}></div>
-          <h4 id="about" className={styled.titleH4}>
-            ABOUT ME
-          </h4>
+          <h4 className={styled.titleH4}>ABOUT ME</h4>
         </div>
         <p className={styled.textP}>
-          I'm a front-end developer with experiences in ReactJs. I created lot
-          pages as personal projects. I wanna work in one startup or company. I
-          love work with modern javascript
+          As a front-end developer with experience in ReactJS, I have developed
+          a number of personal projects and am eager to bring my skills to a
+          startup or company. I am passionate about using modern JavaScript to
+          create dynamic and engaging web pages. With my strong problem-solving
+          abilities and dedication to staying up-to-date on the latest
+          development trends, I am confident in my ability to make meaningful
+          contributions to any team. Whether working on a solo project or
+          collaborating with others, I thrive in fast-paced, high-energy
+          environments and am always looking for new challenges.
         </p>
 
         <ul className={styled.list}>
