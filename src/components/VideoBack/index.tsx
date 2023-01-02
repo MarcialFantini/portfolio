@@ -1,16 +1,15 @@
 import React from "react";
 
-import srcVideo from "../../assets/back.mp4";
-
 import styled from "./styled.module.css";
 
-function VideoBack() {
+const dark = "dark";
+const light = "light";
+
+function VideoBack(props: { theme: boolean }) {
   return (
-    <div className={styled.videoSource}>
-      <video className={styled.video} loop autoPlay muted>
-        <source src={srcVideo} type="video/mp4" />
-      </video>
-    </div>
+    <div
+      className={styled[props.theme ? dark : light] + " " + styled.container}
+    ></div>
   );
 }
 

@@ -12,15 +12,22 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import VideoBack from "./components/VideoBack";
 import WhatIDo from "./components/WhatIDo";
+import Pop from "./components/Pop";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const [state, setState] = useState(true);
+  const [pop, setPop] = useState(false);
+  const changeTheme = () => setState(!state);
+  const changePop = () => setPop(!pop);
   return (
     <>
-      <VideoBack></VideoBack>
+      {pop ? <Pop changePop={changePop}></Pop> : null}
+
+      <VideoBack theme={state}></VideoBack>
+
       <div className="App">
-        <Navbar></Navbar>
+        <Navbar changePop={changePop}></Navbar>
+
         <Header></Header>
         <WhatIDo></WhatIDo>
         <Projects></Projects>
@@ -28,7 +35,7 @@ function App() {
         <Skills></Skills>
         <ContactMe></ContactMe>
         <Footer></Footer>
-        <BtnTop></BtnTop>
+        <BtnTop toggle={changeTheme}></BtnTop>
       </div>
     </>
   );

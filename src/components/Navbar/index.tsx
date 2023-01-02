@@ -4,7 +4,7 @@ import Link from "./Link";
 
 import styled from "./styled.module.css";
 
-function Navbar() {
+function Navbar(props: { changePop: () => void }) {
   const [state, setState] = useState(false);
 
   const alterTrue = () => setState(true);
@@ -12,6 +12,7 @@ function Navbar() {
   return (
     <div id="home" className={styled.header}>
       <h2 className={styled.title}>Marcial.</h2>
+
       <ul
         className={
           !state ? styled.listLink + " " + styled.activeNav : styled.listLink
@@ -34,7 +35,8 @@ function Navbar() {
         </Link>
         <BtnNormal>Resume</BtnNormal>
       </ul>
-      <div onClick={alterTrue} className={styled.btnHamburger}>
+
+      <div onClick={props.changePop} className={styled.btnHamburger}>
         |||
       </div>
     </div>

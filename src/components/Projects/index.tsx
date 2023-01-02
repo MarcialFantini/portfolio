@@ -39,25 +39,25 @@ function Projects() {
           </picture>
         </div>
         <div className={styled.flexRow}>
-          <h2 className={styled.titleH2}>Timer</h2>
+          <h2 className={styled.titleH2}>Shop App</h2>
           <picture className={styled.dos + " " + styled.card}>
             <img className={styled.img} src={srcImage4} alt="" />
           </picture>
         </div>
         <div className={styled.flexRow}>
-          <h2 className={styled.titleH2}>Timer</h2>
+          <h2 className={styled.titleH2}>News App</h2>
           <picture className={styled.tres + " " + styled.card}>
             <img className={styled.img} src={srcImage5} alt="" />
           </picture>
         </div>
         <div className={styled.flexRow}>
-          <h2 className={styled.titleH2}>Timer</h2>
+          <h2 className={styled.titleH2}>App Health</h2>
           <picture className={styled.cuatro + " " + styled.card}>
             <img className={styled.img} src={srcImage3} alt="" />
           </picture>
         </div>
         <div className={styled.flexRow}>
-          <h2 className={styled.titleH2}>Timer</h2>
+          <h2 className={styled.titleH2}>Landing page Nasa</h2>
           <picture className={styled.cinco + " " + styled.card}>
             <img className={styled.img} src={srcImage1} alt="" />
           </picture>

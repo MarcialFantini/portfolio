@@ -4,8 +4,8 @@
   min-height: 300px;
   margin: 40px auto;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  display: flex;
+  flex-direction: column;
 
   min-height: 500px;
   background: rgba(0, 0, 0, 0.2);
@@ -23,23 +23,6 @@
 
   height: 100px;
   overflow: hidden;
-}
-
-.uno {
-  grid-area: uno;
-}
-
-.dos {
-  grid-area: dos;
-}
-.tres {
-  grid-area: tres;
-}
-.cuatro {
-  grid-area: cuatro;
-}
-.cinco {
-  grid-area: cinco;
 }
 
 .img {
@@ -67,7 +50,7 @@
 }
 
 .textProject {
-  color: gray;
+  color: white;
   width: 70%;
   font-size: 1.6rem;
 }

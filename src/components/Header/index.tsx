@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BtnNormal from "../BtnNormal";
 import PictureHeader from "./PictureHeader";
 
 import styled from "./styled.module.css";
 
 export default function Header() {
+  useEffect(() => {});
+
   return (
     <div className={styled.containerHeader}>
       <div className={styled.textContainer}>

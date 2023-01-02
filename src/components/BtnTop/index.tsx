@@ -2,15 +2,20 @@ import React from "react";
 
 import styled from "./styled.module.css";
 
-function BtnTop() {
+function BtnTop(props: { toggle: () => void }) {
   const toTop = () => {
     document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <button onClick={toTop} className={styled.btnTop}>
-      Top
-    </button>
+    <div className={styled.containerBtn}>
+      <button className={styled.btn} onClick={toTop}>
+        Top
+      </button>
+      <button className={styled.btn} onClick={props.toggle}>
+        Theme
+      </button>
+    </div>
   );
 }
 
